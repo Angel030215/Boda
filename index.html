@@ -6,190 +6,183 @@
 
 <title>Ángel & Heidi | Nuestra Boda</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#ece5d8;
-font-family:'Montserrat',sans-serif;
-color:#3f4a3f;
-padding:40px 15px;
+    background:#ece5d8;
+    font-family:'Montserrat',sans-serif;
+    color:#3f4a3f;
+    padding:40px 15px;
 }
 
 .contenedor{
-max-width:850px;
-margin:auto;
+    max-width:850px;
+    margin:auto;
 }
 
 .invitacion{
-background:#ffffff;
-padding:70px 40px;
-box-shadow:0 15px 35px rgba(0,0,0,.18);
-position:relative;
-overflow:hidden;
-}
-
-.eucalipto{
-position:absolute;
-font-size:90px;
-opacity:.15;
-}
-
-.esquina1{
-top:10px;
-right:20px;
-}
-
-.esquina2{
-bottom:10px;
-left:20px;
-transform:rotate(180deg);
+    background:#ffffff;
+    padding:70px 40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    border-radius:8px;
 }
 
 .encabezado{
-text-align:center;
+    text-align:center;
 }
 
 .noscasamos{
-letter-spacing:4px;
-font-size:14px;
-margin-bottom:20px;
+    letter-spacing:4px;
+    font-size:14px;
+    margin-bottom:20px;
+    color:#5d685a;
 }
 
 .nombres{
-font-family:'Great Vibes',cursive;
-font-size:90px;
-line-height:1;
-margin-bottom:20px;
-color:#38463d;
+    font-family:'Pinyon Script',cursive;
+    font-size:100px;
+    line-height:1;
+    margin-bottom:5px;
+    color:#38463d;
+}
+
+.anillos{
+    margin:10px 0 15px;
+    text-align:center;
+}
+
+.anillos svg{
+    display:block;
+    margin:auto;
 }
 
 .fecha{
-font-family:'Cormorant Garamond',serif;
-font-size:34px;
-margin-bottom:15px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    margin-bottom:15px;
+    color:#465244;
 }
 
 .linea{
-width:70%;
-height:1px;
-background:#d8d8d8;
-margin:35px auto;
+    width:70%;
+    height:1px;
+    background:#d8d8d8;
+    margin:35px auto;
 }
 
 .descripcion{
-max-width:600px;
-margin:auto;
-line-height:1.8;
-font-size:16px;
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
+    font-size:16px;
 }
 
 .seccion{
-margin-top:50px;
-text-align:center;
+    margin-top:50px;
+    text-align:center;
 }
 
 .titulo{
-font-family:'Cormorant Garamond',serif;
-font-size:42px;
-margin-bottom:25px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    margin-bottom:25px;
+    color:#465244;
 }
 
 .hora{
-font-size:30px;
-font-weight:500;
-color:#556452;
-margin-bottom:25px;
+    font-size:30px;
+    font-weight:500;
+    color:#556452;
+    margin-bottom:25px;
 }
 
 .boton{
-display:inline-block;
-padding:14px 30px;
-background:#71836d;
-color:white;
-text-decoration:none;
-border-radius:4px;
-font-weight:600;
-transition:.3s;
+    display:inline-block;
+    padding:14px 30px;
+    background:#71836d;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:600;
+    transition:.3s;
 }
 
 .boton:hover{
-background:#586754;
+    background:#586754;
 }
 
 .contador{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:25px;
 }
 
 .item{
-min-width:100px;
+    min-width:100px;
 }
 
 .numero{
-font-size:48px;
-font-weight:600;
-font-family:'Cormorant Garamond',serif;
+    font-size:48px;
+    font-weight:600;
+    font-family:'Cormorant Garamond',serif;
 }
 
 .label{
-font-size:14px;
-text-transform:uppercase;
-letter-spacing:1px;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
 .mensaje{
-margin-top:60px;
-text-align:center;
-font-family:'Cormorant Garamond',serif;
-font-size:28px;
-font-style:italic;
+    margin-top:60px;
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    font-style:italic;
 }
 
 @media(max-width:768px){
 
-.invitacion{
-padding:50px 25px;
-}
+    .invitacion{
+        padding:50px 25px;
+    }
 
-.nombres{
-font-size:60px;
-}
+    .nombres{
+        font-size:72px;
+    }
 
-.fecha{
-font-size:28px;
-}
+    .fecha{
+        font-size:28px;
+    }
 
-.titulo{
-font-size:34px;
-}
+    .titulo{
+        font-size:34px;
+    }
 
-.numero{
-font-size:36px;
-}
+    .numero{
+        font-size:36px;
+    }
 
 }
 
 </style>
 </head>
+
 <body>
 
 <div class="contenedor">
 
 <div class="invitacion">
-
-<div class="eucalipto esquina1">🌿</div>
-<div class="eucalipto esquina2">🌿</div>
 
 <div class="encabezado">
 
@@ -198,7 +191,39 @@ NOS CASAMOS
 </div>
 
 <div class="nombres">
-Ángel & Heidi
+Ángel &amp; Heidi
+</div>
+
+<div class="anillos">
+
+<svg width="110" height="55" viewBox="0 0 110 55">
+
+    <circle
+        cx="42"
+        cy="28"
+        r="16"
+        fill="none"
+        stroke="#c8a86d"
+        stroke-width="3.5"/>
+
+    <circle
+        cx="64"
+        cy="28"
+        r="16"
+        fill="none"
+        stroke="#c8a86d"
+        stroke-width="3.5"/>
+
+    <polygon
+        points="35,11 38,7 41,11 38,15"
+        fill="#d7bc84"/>
+
+    <polygon
+        points="62,6 66,2 70,6 66,10"
+        fill="#d7bc84"/>
+
+</svg>
+
 </div>
 
 <div class="fecha">
@@ -280,19 +305,18 @@ const fechaBoda = new Date("2026-12-05T14:00:00");
 
 function actualizarContador(){
 
-const ahora = new Date();
-const diferencia = fechaBoda - ahora;
+    const ahora = new Date();
+    const diferencia = fechaBoda - ahora;
 
-const dias = Math.floor(diferencia/(1000*60*60*24));
-const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
-const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
-const segundos = Math.floor((diferencia%(1000*60))/1000);
+    const dias = Math.floor(diferencia/(1000*60*60*24));
+    const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
+    const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
+    const segundos = Math.floor((diferencia%(1000*60))/1000);
 
-document.getElementById("dias").textContent = Math.max(0,dias);
-document.getElementById("horas").textContent = Math.max(0,horas);
-document.getElementById("minutos").textContent = Math.max(0,minutos);
-document.getElementById("segundos").textContent = Math.max(0,segundos);
-
+    document.getElementById("dias").textContent = Math.max(0,dias);
+    document.getElementById("horas").textContent = Math.max(0,horas);
+    document.getElementById("minutos").textContent = Math.max(0,minutos);
+    document.getElementById("segundos").textContent = Math.max(0,segundos);
 }
 
 actualizarContador();
