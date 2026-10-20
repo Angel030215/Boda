@@ -30,9 +30,47 @@ body{
 
 .invitacion{
     background:#ffffff;
-    padding:70px 40px;
+    padding:70px 50px;
+    border-radius:10px;
     box-shadow:0 15px 35px rgba(0,0,0,.18);
-    border-radius:8px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* FLORALES */
+
+.floral{
+    position:absolute;
+    pointer-events:none;
+    z-index:0;
+}
+
+.floral svg{
+    width:100%;
+    height:auto;
+}
+
+.floral-top-left{
+    width:420px;
+    top:-90px;
+    left:-90px;
+    opacity:.55;
+}
+
+.floral-bottom-right{
+    width:500px;
+    right:-130px;
+    bottom:-130px;
+    opacity:.60;
+    transform:rotate(180deg);
+}
+
+.encabezado,
+.seccion,
+.linea,
+.mensaje{
+    position:relative;
+    z-index:2;
 }
 
 .encabezado{
@@ -43,72 +81,63 @@ body{
     letter-spacing:4px;
     font-size:14px;
     margin-bottom:20px;
-    color:#5d685a;
+    color:#76816f;
 }
 
 .nombres{
     font-family:'Pinyon Script',cursive;
     font-size:100px;
     line-height:1;
-    margin-bottom:5px;
-    color:#38463d;
+    color:#3f4a3f;
+    margin-bottom:8px;
 }
 
 .anillos{
-    margin:10px 0 15px;
-    text-align:center;
-}
-
-.anillos svg{
-    display:block;
-    margin:auto;
+    margin:8px 0 20px;
 }
 
 .fecha{
     font-family:'Cormorant Garamond',serif;
-    font-size:34px;
-    margin-bottom:15px;
-    color:#465244;
+    font-size:36px;
+    color:#4e5b4b;
+}
+
+.descripcion{
+    max-width:620px;
+    margin:20px auto 0;
+    line-height:1.9;
 }
 
 .linea{
     width:70%;
     height:1px;
-    background:#d8d8d8;
-    margin:35px auto;
-}
-
-.descripcion{
-    max-width:600px;
-    margin:auto;
-    line-height:1.8;
-    font-size:16px;
+    background:#d9d9d9;
+    margin:40px auto;
 }
 
 .seccion{
-    margin-top:50px;
     text-align:center;
+    margin-top:10px;
 }
 
 .titulo{
     font-family:'Cormorant Garamond',serif;
-    font-size:42px;
-    margin-bottom:25px;
-    color:#465244;
+    font-size:46px;
+    color:#485446;
+    margin-bottom:20px;
 }
 
 .hora{
-    font-size:30px;
-    font-weight:500;
-    color:#556452;
+    font-size:34px;
+    color:#5b6958;
     margin-bottom:25px;
 }
 
 .boton{
     display:inline-block;
-    padding:14px 30px;
-    background:#71836d;
-    color:white;
+    padding:14px 32px;
+    background:#76856e;
+    color:#fff;
     text-decoration:none;
     border-radius:4px;
     font-weight:600;
@@ -116,39 +145,40 @@ body{
 }
 
 .boton:hover{
-    background:#586754;
+    background:#677562;
 }
 
 .contador{
     display:flex;
     justify-content:center;
-    gap:30px;
+    gap:35px;
     flex-wrap:wrap;
-    margin-top:25px;
+    margin-top:20px;
 }
 
 .item{
-    min-width:100px;
+    min-width:80px;
 }
 
 .numero{
-    font-size:48px;
-    font-weight:600;
     font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    color:#485446;
 }
 
 .label{
-    font-size:14px;
-    text-transform:uppercase;
+    font-size:12px;
     letter-spacing:1px;
+    text-transform:uppercase;
 }
 
 .mensaje{
     margin-top:60px;
     text-align:center;
     font-family:'Cormorant Garamond',serif;
-    font-size:28px;
+    font-size:30px;
     font-style:italic;
+    color:#5c6458;
 }
 
 @media(max-width:768px){
@@ -166,13 +196,24 @@ body{
     }
 
     .titulo{
-        font-size:34px;
-    }
-
-    .numero{
         font-size:36px;
     }
 
+    .numero{
+        font-size:38px;
+    }
+
+    .floral-top-left{
+        width:270px;
+        top:-60px;
+        left:-60px;
+    }
+
+    .floral-bottom-right{
+        width:320px;
+        right:-80px;
+        bottom:-80px;
+    }
 }
 
 </style>
@@ -183,6 +224,102 @@ body{
 <div class="contenedor">
 
 <div class="invitacion">
+
+<!-- FLORAL SUPERIOR IZQUIERDA -->
+
+<div class="floral floral-top-left">
+<svg viewBox="0 0 400 400">
+
+<path d="M60 340 C90 260 140 180 230 40"
+stroke="#bcc5ac"
+stroke-width="3"
+fill="none"/>
+
+<path d="M105 250 C135 225 145 195 125 165 C95 190 88 220 105 250"
+fill="#cfd9c2"/>
+
+<path d="M150 215 C185 190 190 155 170 125 C138 150 132 185 150 215"
+fill="#bfcdae"/>
+
+<path d="M205 165 C240 140 248 105 225 75 C190 100 185 135 205 165"
+fill="#d8e2cf"/>
+
+<path d="M255 115 C285 90 292 60 272 35 C245 55 238 85 255 115"
+fill="#becdad"/>
+
+<path d="M80 285 C55 260 50 225 72 195 C100 220 105 252 80 285"
+fill="#dde6d6"/>
+
+<path d="M125 200 C100 175 95 145 116 115 C145 140 148 175 125 200"
+fill="#ced8c1"/>
+
+<path d="M175 130 C145 105 140 75 162 45 C192 70 196 100 175 130"
+fill="#dfe8d5"/>
+
+<g opacity=".9">
+<circle cx="95" cy="240" r="10" fill="#ffffff"/>
+<circle cx="106" cy="240" r="10" fill="#ffffff"/>
+<circle cx="100" cy="230" r="10" fill="#ffffff"/>
+<circle cx="100" cy="250" r="10" fill="#ffffff"/>
+<circle cx="100" cy="240" r="4" fill="#d5cfbf"/>
+
+<circle cx="200" cy="120" r="8" fill="#ffffff"/>
+<circle cx="210" cy="120" r="8" fill="#ffffff"/>
+<circle cx="205" cy="112" r="8" fill="#ffffff"/>
+<circle cx="205" cy="128" r="8" fill="#ffffff"/>
+<circle cx="205" cy="120" r="3" fill="#d5cfbf"/>
+</g>
+
+</svg>
+</div>
+
+<!-- FLORAL INFERIOR DERECHA -->
+
+<div class="floral floral-bottom-right">
+<svg viewBox="0 0 400 400">
+
+<path d="M60 340 C90 260 140 180 230 40"
+stroke="#bcc5ac"
+stroke-width="3"
+fill="none"/>
+
+<path d="M105 250 C135 225 145 195 125 165 C95 190 88 220 105 250"
+fill="#cfd9c2"/>
+
+<path d="M150 215 C185 190 190 155 170 125 C138 150 132 185 150 215"
+fill="#bfcdae"/>
+
+<path d="M205 165 C240 140 248 105 225 75 C190 100 185 135 205 165"
+fill="#d8e2cf"/>
+
+<path d="M255 115 C285 90 292 60 272 35 C245 55 238 85 255 115"
+fill="#becdad"/>
+
+<path d="M80 285 C55 260 50 225 72 195 C100 220 105 252 80 285"
+fill="#dde6d6"/>
+
+<path d="M125 200 C100 175 95 145 116 115 C145 140 148 175 125 200"
+fill="#ced8c1"/>
+
+<path d="M175 130 C145 105 140 75 162 45 C192 70 196 100 175 130"
+fill="#dfe8d5"/>
+
+<g opacity=".9">
+<circle cx="95" cy="240" r="10" fill="#ffffff"/>
+<circle cx="106" cy="240" r="10" fill="#ffffff"/>
+<circle cx="100" cy="230" r="10" fill="#ffffff"/>
+<circle cx="100" cy="250" r="10" fill="#ffffff"/>
+<circle cx="100" cy="240" r="4" fill="#d5cfbf"/>
+
+<circle cx="200" cy="120" r="8" fill="#ffffff"/>
+<circle cx="210" cy="120" r="8" fill="#ffffff"/>
+<circle cx="205" cy="112" r="8" fill="#ffffff"/>
+<circle cx="205" cy="128" r="8" fill="#ffffff"/>
+<circle cx="205" cy="120" r="3" fill="#d5cfbf"/>
+</g>
+
+</svg>
+</div>
 
 <div class="encabezado">
 
@@ -198,29 +335,21 @@ NOS CASAMOS
 
 <svg width="110" height="55" viewBox="0 0 110 55">
 
-    <circle
-        cx="42"
-        cy="28"
-        r="16"
-        fill="none"
-        stroke="#c8a86d"
-        stroke-width="3.5"/>
+<circle cx="42" cy="28" r="16"
+fill="none"
+stroke="#c8a86d"
+stroke-width="3.5"/>
 
-    <circle
-        cx="64"
-        cy="28"
-        r="16"
-        fill="none"
-        stroke="#c8a86d"
-        stroke-width="3.5"/>
+<circle cx="64" cy="28" r="16"
+fill="none"
+stroke="#c8a86d"
+stroke-width="3.5"/>
 
-    <polygon
-        points="35,11 38,7 41,11 38,15"
-        fill="#d7bc84"/>
+<polygon points="35,11 38,7 41,11 38,15"
+fill="#d7bc84"/>
 
-    <polygon
-        points="62,6 66,2 70,6 66,10"
-        fill="#d7bc84"/>
+<polygon points="62,6 66,2 70,6 66,10"
+fill="#d7bc84"/>
 
 </svg>
 
@@ -305,18 +434,19 @@ const fechaBoda = new Date("2026-12-05T14:00:00");
 
 function actualizarContador(){
 
-    const ahora = new Date();
-    const diferencia = fechaBoda - ahora;
+const ahora = new Date();
+const diferencia = fechaBoda - ahora;
 
-    const dias = Math.floor(diferencia/(1000*60*60*24));
-    const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
-    const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
-    const segundos = Math.floor((diferencia%(1000*60))/1000);
+const dias = Math.floor(diferencia/(1000*60*60*24));
+const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
+const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
+const segundos = Math.floor((diferencia%(1000*60))/1000);
 
-    document.getElementById("dias").textContent = Math.max(0,dias);
-    document.getElementById("horas").textContent = Math.max(0,horas);
-    document.getElementById("minutos").textContent = Math.max(0,minutos);
-    document.getElementById("segundos").textContent = Math.max(0,segundos);
+document.getElementById("dias").textContent = Math.max(0,dias);
+document.getElementById("horas").textContent = Math.max(0,horas);
+document.getElementById("minutos").textContent = Math.max(0,minutos);
+document.getElementById("segundos").textContent = Math.max(0,segundos);
+
 }
 
 actualizarContador();
