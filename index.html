@@ -3,102 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ángel & Heidi - Nuestra Boda</title>
+
+<title>Ángel & Heidi | Nuestra Boda</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-margin:0;
-font-family:'Montserrat',sans-serif;
-background:#f8f8f2;
-color:#334235;
-text-align:center;
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    background:#f8f8f2;
+    color:#34403a;
+    text-align:center;
 }
 
 .hero{
-padding:100px 20px;
-background:#f4f4ee;
+    padding:100px 20px;
+}
+
+.hero p:first-child{
+    letter-spacing:4px;
+    color:#60715c;
+    font-size:14px;
 }
 
 h1{
-font-family:'Cormorant Garamond',serif;
-font-size:4rem;
-margin:0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    margin:10px 0;
 }
 
 h2{
-font-family:'Cormorant Garamond',serif;
-font-size:2.5rem;
-margin-bottom:20px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin-bottom:30px;
 }
 
 .fecha{
-font-size:1.3rem;
-margin-top:20px;
+    font-size:1.4rem;
+    margin-top:20px;
+    color:#60715c;
 }
 
 section{
-padding:80px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-.boton{
-display:inline-block;
-background:#60715c;
-color:white;
-padding:15px 25px;
-text-decoration:none;
-border-radius:5px;
-margin-top:20px;
-font-weight:bold;
-}
-
-.boton:hover{
-background:#445241;
+    padding:80px 20px;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.08);
-margin-top:20px;
+    max-width:500px;
+    margin:0 auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:#60715c;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#4f5e4c;
 }
 
 .contador{
-display:flex;
-x;
-flex-wrap:wrap;
-}
-
-.numero{
-font-size:2.5rem;
-font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:50px;
+    max-width:900px;
+    margin:auto;
 }
 
 .item{
-min-width:100px;
+    min-width:120px;
+}
+
+.numero{
+    font-size:4rem;
+    font-weight:bold;
+    color:#425247;
+}
+
+.label{
+    font-size:1.1rem;
+    color:#60715c;
 }
 
 footer{
-padding:60px 20px;
-background:#eef1ea;
-font-style:italic;
-font-size:1.2rem;
+    padding:80px 20px;
+    background:#eef1ea;
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
 }
 
 @media(max-width:768px){
-h1{
-font-size:2.8rem;
+
+    h1{
+        font-size:3rem;
+    }
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    .contador{
+        gap:25px;
+    }
+
+    .numero{
+        font-size:3rem;
+    }
+
 }
-h2{
-font-size:2rem;
-}
-}
+
 </style>
 </head>
+
 <body>
 
 <section class="hero">
@@ -107,17 +138,11 @@ font-size:2rem;
 
 <h1>Ángel & Heidi</h1>
 
-<p class="fecha">
-5 de diciembre de 2026
-</p>
+<p class="fecha">5 de diciembre de 2026</p>
 
 <p>
 Con mucha alegría queremos compartir con ustedes uno de los momentos más importantes de nuestra vida.
 </p>
-
-#ceremonia
-Ver detalles
-</a>
 
 </section>
 
@@ -129,43 +154,38 @@ Ver detalles
 
 <div class="item">
 <div id="dias" class="numero">0</div>
-<div>Días</div>
+<div class="label">Días</div>
 </div>
 
 <div class="item">
 <div id="horas" class="numero">0</div>
-<div>Horas</div>
+<div class="label">Horas</div>
 </div>
 
 <div class="item">
 <div id="minutos" class="numero">0</div>
-<div>Minutos</div>
+<div class="label">Minutos</div>
 </div>
 
 <div class="item">
 <div id="segundos" class="numero">0</div>
-<div>Segundos</div>
+<div class="label">Segundos</div>
 </div>
 
 </div>
 
 </section>
 
-<section id="ceremonia">
+<section>
 
 <h2>Ceremonia</h2>
 
 <div class="card">
 
-<p>
-Horario por confirmar
-</p>
+<p>Horario por confirmar</p>
 
-<p>
-Dirección pendiente
-</p>
-
-<a class="boton"
+<a
+class="boton"
 href="https://maps.app.goo.gl/Vz62zKy95kfWyWmp6"
 target="_blank">
 Ver ubicación
@@ -181,35 +201,14 @@ Ver ubicación
 
 <div class="card">
 
-<p>
-2:00 PM
-</p>
+<p>2:00 PM</p>
 
-<p>
-Dirección pendiente
-</p>
-
-<a class="boton"
+<a
+class="boton"
 href="https://maps.app.goo.gl/Vz62zKy95kfWyWmp6"
 target="_blank">
 Cómo llegar
 </a>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Código de Vestimenta</h2>
-
-<div class="card">
-
-<h3>Formal Elegante</h3>
-
-<p>
-Próximamente más detalles.
-</p>
 
 </div>
 
@@ -223,38 +222,27 @@ El mejor regalo será compartir este día contigo.
 
 <script>
 
-const fechaBoda =
-new Date("December 5, 2026 14:00:00");
+const fechaBoda = new Date("December 5, 2026 14:00:00");
 
 function actualizarContador(){
 
 const ahora = new Date();
+const diferencia = fechaBoda - ahora;
 
-const diferencia =
-fechaBoda - ahora;
+const dias = Math.floor(diferencia / (1000*60*60*24));
+const horas = Math.floor((diferencia % (1000*60*60*24)) / (1000*60*60));
+const minutos = Math.floor((diferencia % (1000*60*60)) / (1000*60));
+const segundos = Math.floor((diferencia % (1000*60)) / 1000);
 
-const dias =
-Math.floor(diferencia/(1000*60*60*24));
-
-const horas =
-Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
-
-const minutos =
-Math.floor((diferencia%(1000*60*60))/(1000*60));
-
-const segundos =
-Math.floor((diferencia%(1000*60))/1000);
-
-document.getElementById("dias").innerHTML=dias;
-document.getElementById("horas").innerHTML=horas;
-document.getElementById("minutos").innerHTML=minutos;
-document.getElementById("segundos").innerHTML=segundos;
+document.getElementById("dias").innerText = dias;
+document.getElementById("horas").innerText = horas;
+document.getElementById("minutos").innerText = minutos;
+document.getElementById("segundos").innerText = segundos;
 
 }
 
-setInterval(actualizarContador,1000);
-
 actualizarContador();
+setInterval(actualizarContador,1000);
 
 </script>
 
