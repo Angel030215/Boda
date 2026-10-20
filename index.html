@@ -10,120 +10,141 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:'Montserrat',sans-serif;
-    background:#f8f8f2;
-    color:#34403a;
-    text-align:center;
+font-family:'Montserrat',sans-serif;
+background:#f5f5ef;
+color:#34403a;
+text-align:center;
 }
 
 .hero{
-    padding:100px 20px;
+min-height:75vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
 }
 
-.hero p:first-child{
-    letter-spacing:4px;
-    color:#60715c;
-    font-size:14px;
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:5rem;
+font-weight:600;
+margin:15px 0;
+color:#2f3f36;
 }
 
-h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:4rem;
-    margin:10px 0;
-}
-
-h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:3rem;
-    margin-bottom:30px;
+.hero h3{
+font-weight:400;
+letter-spacing:4px;
+color:#66755f;
+margin-bottom:15px;
 }
 
 .fecha{
-    font-size:1.4rem;
-    margin-top:20px;
-    color:#60715c;
+font-size:2rem;
+margin-bottom:30px;
+}
+
+.descripcion{
+max-width:800px;
+font-size:1.2rem;
+line-height:1.8;
 }
 
 section{
-    padding:80px 20px;
+padding:80px 20px;
 }
 
-.card{
-    max-width:500px;
-    margin:0 auto;
-    background:white;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.boton{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:#60715c;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.boton:hover{
-    background:#4f5e4c;
+h2{
+font-family:'Cormorant Garamond',serif;
+font-size:3.5rem;
+margin-bottom:40px;
+color:#2f3f36;
 }
 
 .contador{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:50px;
-    max-width:900px;
-    margin:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
 }
 
 .item{
-    min-width:120px;
+min-width:120px;
 }
 
 .numero{
-    font-size:4rem;
-    font-weight:bold;
-    color:#425247;
+font-size:4rem;
+font-weight:700;
+color:#34403a;
 }
 
-.label{
-    font-size:1.1rem;
-    color:#60715c;
+.texto{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+.card{
+background:white;
+max-width:500px;
+margin:auto;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.card p{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.boton{
+display:inline-block;
+padding:14px 30px;
+background:#66755f;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:.3s;
+}
+
+.boton:hover{
+background:#53604e;
 }
 
 footer{
-    padding:80px 20px;
-    background:#eef1ea;
-    font-family:'Cormorant Garamond',serif;
-    font-size:2rem;
+padding:100px 20px;
+font-family:'Cormorant Garamond',serif;
+font-size:2.5rem;
+color:#34403a;
 }
 
 @media(max-width:768px){
 
-    h1{
-        font-size:3rem;
-    }
+.hero h1{
+font-size:3.2rem;
+}
 
-    h2{
-        font-size:2.2rem;
-    }
+h2{
+font-size:2.5rem;
+}
 
-    .contador{
-        gap:25px;
-    }
+.contador{
+gap:30px;
+}
 
-    .numero{
-        font-size:3rem;
-    }
+.numero{
+font-size:3rem;
+}
 
 }
 
@@ -134,15 +155,17 @@ footer{
 
 <section class="hero">
 
-<p>NOS CASAMOS</p>
+<h3>NOS CASAMOS</h3>
 
 <h1>Ángel & Heidi</h1>
 
-<p class="fecha">5 de diciembre de 2026</p>
+<div class="fecha">
+5 de diciembre de 2026
+</div>
 
-<p>
+<div class="descripcion">
 Con mucha alegría queremos compartir con ustedes uno de los momentos más importantes de nuestra vida.
-</p>
+</div>
 
 </section>
 
@@ -154,22 +177,22 @@ Con mucha alegría queremos compartir con ustedes uno de los momentos más impor
 
 <div class="item">
 <div id="dias" class="numero">0</div>
-<div class="label">Días</div>
+<div class="texto">Días</div>
 </div>
 
 <div class="item">
 <div id="horas" class="numero">0</div>
-<div class="label">Horas</div>
+<div class="texto">Horas</div>
 </div>
 
 <div class="item">
 <div id="minutos" class="numero">0</div>
-<div class="label">Minutos</div>
+<div class="texto">Minutos</div>
 </div>
 
 <div class="item">
 <div id="segundos" class="numero">0</div>
-<div class="label">Segundos</div>
+<div class="texto">Segundos</div>
 </div>
 
 </div>
@@ -215,29 +238,27 @@ Cómo llegar
 </section>
 
 <footer>
-
 El mejor regalo será compartir este día contigo.
-
 </footer>
 
 <script>
 
-const fechaBoda = new Date("December 5, 2026 14:00:00");
+const fechaBoda = new Date("2026-12-05T14:00:00");
 
 function actualizarContador(){
 
 const ahora = new Date();
 const diferencia = fechaBoda - ahora;
 
-const dias = Math.floor(diferencia / (1000*60*60*24));
-const horas = Math.floor((diferencia % (1000*60*60*24)) / (1000*60*60));
-const minutos = Math.floor((diferencia % (1000*60*60)) / (1000*60));
-const segundos = Math.floor((diferencia % (1000*60)) / 1000);
+const dias = Math.floor(diferencia/(1000*60*60*24));
+const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
+const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
+const segundos = Math.floor((diferencia%(1000*60))/1000);
 
-document.getElementById("dias").innerText = dias;
-document.getElementById("horas").innerText = horas;
-document.getElementById("minutos").innerText = minutos;
-document.getElementById("segundos").innerText = segundos;
+document.getElementById("dias").innerHTML = dias;
+document.getElementById("horas").innerHTML = horas;
+document.getElementById("minutos").innerHTML = minutos;
+document.getElementById("segundos").innerHTML = segundos;
 
 }
 
