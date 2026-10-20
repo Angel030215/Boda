@@ -6,6 +6,8 @@
 
 <title>Ángel & Heidi | Nuestra Boda</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 
 *{
@@ -15,189 +17,211 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Segoe UI, sans-serif;
-background:#f5f5ef;
-color:#34403a;
+background:#ece5d8;
+font-family:'Montserrat',sans-serif;
+color:#3f4a3f;
+padding:40px 15px;
+}
+
+.contenedor{
+max-width:850px;
+margin:auto;
+}
+
+.invitacion{
+background:#ffffff;
+padding:70px 40px;
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+position:relative;
+overflow:hidden;
+}
+
+.eucalipto{
+position:absolute;
+font-size:90px;
+opacity:.15;
+}
+
+.esquina1{
+top:10px;
+right:20px;
+}
+
+.esquina2{
+bottom:10px;
+left:20px;
+transform:rotate(180deg);
+}
+
+.encabezado{
 text-align:center;
 }
 
-.hero{
-min-height:75vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:40px 20px;
-}
-
-.hero h3{
+.noscasamos{
 letter-spacing:4px;
-font-weight:400;
-color:#66755f;
-margin-bottom:15px;
-}
-
-.hero h1{
-font-size:5rem;
-font-weight:300;
+font-size:14px;
 margin-bottom:20px;
 }
 
+.nombres{
+font-family:'Great Vibes',cursive;
+font-size:90px;
+line-height:1;
+margin-bottom:20px;
+color:#38463d;
+}
+
 .fecha{
-font-size:2rem;
-margin-bottom:30px;
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+margin-bottom:15px;
+}
+
+.linea{
+width:70%;
+height:1px;
+background:#d8d8d8;
+margin:35px auto;
 }
 
 .descripcion{
-max-width:800px;
-font-size:1.2rem;
-line-height:1.8;
-}
-
-section{
-padding:80px 20px;
-}
-
-h2{
-font-size:3rem;
-font-weight:300;
-margin-bottom:40px;
-}
-
-.contador{
-display:flex;
-justify-content:center;
-align-items:center;
-flex-wrap:wrap;
-gap:60px;
-}
-
-.item{
-min-width:120px;
-}
-
-.numero{
-font-size:4rem;
-font-weight:bold;
-}
-
-.texto{
-font-size:1.2rem;
-margin-top:10px;
-}
-
-.card{
-background:white;
-max-width:500px;
+max-width:600px;
 margin:auto;
-padding:40px;
-border-radius:15px;
-box-shadow:0 4px 20px rgba(0,0,0,.08);
+line-height:1.8;
+font-size:16px;
 }
 
-.card p{
-font-size:1.2rem;
+.seccion{
+margin-top:50px;
+text-align:center;
+}
+
+.titulo{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+margin-bottom:25px;
+}
+
+.hora{
+font-size:30px;
+font-weight:500;
+color:#556452;
 margin-bottom:25px;
 }
 
 .boton{
 display:inline-block;
-padding:15px 30px;
-background:#66755f;
+padding:14px 30px;
+background:#71836d;
 color:white;
 text-decoration:none;
-border-radius:8px;
+border-radius:4px;
 font-weight:600;
+transition:.3s;
 }
 
 .boton:hover{
-background:#55634f;
+background:#586754;
 }
 
-footer{
-padding:100px 20px;
-font-size:2rem;
+.contador{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.item{
+min-width:100px;
+}
+
+.numero{
+font-size:48px;
+font-weight:600;
+font-family:'Cormorant Garamond',serif;
+}
+
+.label{
+font-size:14px;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+.mensaje{
+margin-top:60px;
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
 font-style:italic;
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:3rem;
+.invitacion{
+padding:50px 25px;
 }
 
-h2{
-font-size:2.2rem;
+.nombres{
+font-size:60px;
 }
 
-.contador{
-gap:30px;
+.fecha{
+font-size:28px;
+}
+
+.titulo{
+font-size:34px;
 }
 
 .numero{
-font-size:3rem;
+font-size:36px;
 }
 
 }
 
 </style>
 </head>
-
 <body>
 
-<section class="hero">
+<div class="contenedor">
 
-<h3>NOS CASAMOS</h3>
+<div class="invitacion">
 
-<h1>Ángel & Heidi</h1>
+<div class="eucalipto esquina1">🌿</div>
+<div class="eucalipto esquina2">🌿</div>
+
+<div class="encabezado">
+
+<div class="noscasamos">
+NOS CASAMOS
+</div>
+
+<div class="nombres">
+Ángel & Heidi
+</div>
 
 <div class="fecha">
 5 de diciembre de 2026
 </div>
 
 <div class="descripcion">
-Con mucha alegría queremos compartir con ustedes uno de los momentos más importantes de nuestra vida.
-</div>
-
-</section>
-
-<section>
-
-<h2>Cuenta regresiva</h2>
-
-<div class="contador">
-
-<div class="item">
-<div id="dias" class="numero">0</div>
-<div class="texto">Días</div>
-</div>
-
-<div class="item">
-<div id="horas" class="numero">0</div>
-<div class="texto">Horas</div>
-</div>
-
-<div class="item">
-<div id="minutos" class="numero">0</div>
-<div class="texto">Minutos</div>
-</div>
-
-<div class="item">
-<div id="segundos" class="numero">0</div>
-<div class="texto">Segundos</div>
+Con mucha alegría queremos compartir contigo uno de los momentos más importantes de nuestra vida.
 </div>
 
 </div>
 
-</section>
+<div class="linea"></div>
 
-<section>
+<div class="seccion">
 
-<h2>Ceremonia</h2>
+<div class="titulo">
+Ceremonia
+</div>
 
-<div class="card">
-
-<p>2:00 PM</p>
+<div class="hora">
+2:00 PM
+</div>
 
 <a
 class="boton"
@@ -208,11 +232,47 @@ Ver ubicación
 
 </div>
 
-</section>
+<div class="linea"></div>
 
-<footer>
-El mejor regalo será compartir este día contigo.
-</footer>
+<div class="seccion">
+
+<div class="titulo">
+Cuenta regresiva
+</div>
+
+<div class="contador">
+
+<div class="item">
+<div id="dias" class="numero">0</div>
+<div class="label">Días</div>
+</div>
+
+<div class="item">
+<div id="horas" class="numero">0</div>
+<div class="label">Horas</div>
+</div>
+
+<div class="item">
+<div id="minutos" class="numero">0</div>
+<div class="label">Minutos</div>
+</div>
+
+<div class="item">
+<div id="segundos" class="numero">0</div>
+<div class="label">Segundos</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="mensaje">
+El mejor regalo será compartir este día contigo
+</div>
+
+</div>
+
+</div>
 
 <script>
 
@@ -228,10 +288,10 @@ const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
 const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
 const segundos = Math.floor((diferencia%(1000*60))/1000);
 
-document.getElementById("dias").innerHTML = dias;
-document.getElementById("horas").innerHTML = horas;
-document.getElementById("minutos").innerHTML = minutos;
-document.getElementById("segundos").innerHTML = segundos;
+document.getElementById("dias").textContent = Math.max(0,dias);
+document.getElementById("horas").textContent = Math.max(0,horas);
+document.getElementById("minutos").textContent = Math.max(0,minutos);
+document.getElementById("segundos").textContent = Math.max(0,segundos);
 
 }
 
